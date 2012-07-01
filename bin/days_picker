@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'days_picker'
+puts Saturdays.by_year(2011)
+puts Sundays.by_year(2011)
