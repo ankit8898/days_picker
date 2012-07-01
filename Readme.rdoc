@@ -1,25 +1,44 @@
-== Saturday
+== Days Picker
 
-Saturday helps you find the saturdays in a month OR by month/year.  Implementation on Pure Ruby {Date Class}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html].
+Days Picker helps you find the total Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year.  Implementation on Pure Ruby {Date Class}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html].
 
 == Installation
 
 In Rails 3+, add this to your Gemfile and run the bundle command.
 
-  gem 'saturday'
+  gem 'days_picker'
 
 == Usage
 
-There are current two helper methods available
+  require 'days_picker'
 
-  Saturday.by_year(year)
-Return {Date objects}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html] for the entire year.
+There are multiple helper available for days_picker usage.
 
-  Saturday.by_year_and_month(year,month)
-Returns {Date objects}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html] for the year and month specified .
+Helpers based on Date::ABBR_MONTHNAMES
 
-Helpers based on Date::ABBR_MONTHNAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  by_year(year), by_year_and_month(year,month), in_jan(year), in_feb(year), in_mar(year), in_apr(year), in_may(year), in_jun(year), in_jul(year), in_aug(year), in_sep(year), in_oct(year), in_nov(year), in_dec(year)
 
-  Saturday.in_jan(year) , Saturday.in_feb(year) , Saturday.in_mar(year) ...... Saturday.in_dec(year) 
-Returns {Date objects}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html] for month helper in the specified year
+Helpers will be accesible on days classes
 
+  Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays
+
+Example
+  Sundays.by_year(2012)
+  Sundays.by_year_and_month(2012,3)
+  Sundays.in_jan(2012)
+  Sundays.in_feb(2012)
+  Sundays.in_mar(2012)
+  Sundays.in_apr(2012)
+  Sundays.in_jun(2012)
+  Sundays.in_jul(2012)
+  Sundays.in_aug(2012)
+  Sundays.in_sep(2012)
+  Sundays.in_oct(2012)
+  Sundays.in_nov(2012)
+  Sundays.in_dec(2012)
+
+
+    
+Returns {Date objects}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html] for any of the helpers used.
+
+  
