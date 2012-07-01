@@ -15,5 +15,5 @@ Gem::Specification.new do |s|
   s.executables << 'days_picker'
   s.rubygems_version = "1.8.11"
   s.homepage    =
-    'https://github.com/ankit8898/saturday'
+    'https://github.com/ankit8898/days_picker'
 end

@@ -1,0 +1,25 @@
+== Saturday
+
+Saturday helps you find the saturdays in a month OR by month/year.  Implementation on Pure Ruby {Date Class}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html].
+
+== Installation
+
+In Rails 3+, add this to your Gemfile and run the bundle command.
+
+  gem 'saturday'
+
+== Usage
+
+There are current two helper methods available
+
+  Saturday.by_year(year)
+Return {Date objects}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html] for the entire year.
+
+  Saturday.by_year_and_month(year,month)
+Returns {Date objects}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html] for the year and month specified .
+
+Helpers based on Date::ABBR_MONTHNAMES = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+  Saturday.in_jan(year) , Saturday.in_feb(year) , Saturday.in_mar(year) ...... Saturday.in_dec(year) 
+Returns {Date objects}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html] for month helper in the specified year
+
