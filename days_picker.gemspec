@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.files       = [
                     "lib/days_picker.rb",
                     "lib/days_picker/dates.rb",
-                    "lib/days_picker/constants.rb"
+                    "lib/days_picker/constants.rb",
                     "bin/days_picker"]
   s.require_paths = ["lib"]
   s.executables << 'days_picker'
