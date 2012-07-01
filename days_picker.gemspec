@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'Days Picker'
+  s.name        = 'days_picker'
   s.version     = '1.0.0'
   s.date        = '2012-07-01'
   s.summary     = "Days Picker helps you find the dates you want.  Yoy can find Sundays to Saturdays of a Month or by Year or by Month years"
