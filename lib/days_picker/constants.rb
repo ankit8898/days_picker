@@ -1,5 +1,5 @@
 module Constants
-  BY  = ['by_year','by_year_and_month']
+  BY  = %w(by_year by_year_and_month)
   MONTHS_MAP = {:nil => :nil,
     :jan => 31,
     :feb => 28,
@@ -13,5 +13,6 @@ module Constants
     :oct => 31,
     :nov => 30,
     :dec => 31}
-  DAYS=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  DAYS= %w(Sunday Monday Tuesday Wednesday Thursday Friday Saturday Weekday)
+  WEEKDAYS = %w(1 2 3 4 5)
 end

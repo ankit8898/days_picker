@@ -1,6 +1,6 @@
 == Days Picker
 
-Days Picker helps you find the total Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year.  Implementation on Pure Ruby {Date Class}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html].
+Days Picker helps you find the total Weekdays, Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year.  Implementation on Pure Ruby {Date Class}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html].
 
 == Installation
 
@@ -20,9 +20,25 @@ Helpers based on Date::ABBR_MONTHNAMES
 
 Helpers will be accesible on days classes
 
-  Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays
+  Weekdays, Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays
 
 Example
+  Weekdays.by_year(2012)
+  Weekdays.by_year_and_month(2012,3)
+  Weekdays.in_jan(2012)
+  Weekdays.in_feb(2012)
+  Weekdays.in_mar(2012)
+  Weekdays.in_apr(2012)
+  Weekdays.in_jun(2012)
+  Weekdays.in_jul(2012)
+  Weekdays.in_aug(2012)
+  Weekdays.in_sep(2012)
+  Weekdays.in_oct(2012)
+  Weekdays.in_nov(2012)
+  Weekdays.in_dec(2012)
+  
+For Finding Sundays to Fridays.  Use it following way:
+
   Sundays.by_year(2012)
   Sundays.by_year_and_month(2012,3)
   Sundays.in_jan(2012)

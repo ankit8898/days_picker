@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name        = 'days_picker'
-  s.version     = '1.0.2'
+  s.version     = '1.1.0'
   s.date        = '2012-07-01'
-  s.summary     = "Days Picker helps you find the total Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year."
-  s.description = "Days Picker helps you find the total Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year."
+  s.summary     = "Days Picker helps you find the total Weekdays, Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year. (ie Weekdays.in_jan(2012), Sundays.in_jan(2012) ,Saturdays.by_year(2012) .. )"
+  s.description = "Days Picker helps you find the total Weekdays, Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year. (ie Weekdays.in_jan(2012), Sundays.in_jan(2012) ,Saturdays.by_year(2012) .. )"
   s.authors     = ["Ankit gupta"]
   s.email       = 'ankit.gupta8898@gmail.com'
   s.files       = [

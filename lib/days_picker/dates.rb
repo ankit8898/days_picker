@@ -7,9 +7,9 @@ module Dates
     Dates.const_set(day, Class.new do
         attr_accessor :date ,:year ,:month
 
-        define_method (:initialize) do |year=nil,month=nil|
-          @year = year
-          @month = month
+        define_method (:initialize) do |*args|
+          @year = args[0]
+          @month = args[1]
           @date = @year && @month.nil? ? Date.new(year) : Date.new(year,month)
         end
 
@@ -22,7 +22,7 @@ module Dates
           else
             Constants::MONTHS_MAP.each_with_index { |(key,value),index|  dates << find_dates(year,month = index,value,day) unless index==0}
           end
-          dates
+          dates.flatten!
         end
 
 
@@ -30,10 +30,13 @@ module Dates
 
         define_method(:find_dates) do |year,month,value,day|
           dates = Array.new
-          1.upto(value) {|o| dates << Date.new(year,month,o) if Date.new(year,month,o).send("#{day.downcase}?") }
-          dates
+          1.upto(value) {|o| dates << Date.new(year,month,o) if day.eql?("Weekday") ?  check_weekday(year,month,o): Date.new(year,month,o).send("#{day.downcase}?") }
+          dates.flatten
         end
 
+        def check_weekday(*args)
+          Constants::WEEKDAYS.include?(Date.new(args[0],args[1],args[2]).wday.to_s)
+        end
       end
     )
   end
