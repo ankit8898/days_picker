@@ -1,0 +1,40 @@
+PATH
+  remote: .
+  specs:
+    days_picker (1.1.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.0.0)
+      i18n (~> 0.6, >= 0.6.4)
+      minitest (~> 4.2)
+      multi_json (~> 1.3)
+      thread_safe (~> 0.1)
+      tzinfo (~> 0.3.37)
+    atomic (1.1.10)
+    diff-lcs (1.2.4)
+    i18n (0.6.4)
+    minitest (4.7.5)
+    multi_json (1.7.7)
+    rake (10.1.0)
+    rspec (2.13.0)
+      rspec-core (~> 2.13.0)
+      rspec-expectations (~> 2.13.0)
+      rspec-mocks (~> 2.13.0)
+    rspec-core (2.13.1)
+    rspec-expectations (2.13.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.13.1)
+    thread_safe (0.1.0)
+      atomic
+    tzinfo (0.3.37)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  activesupport
+  days_picker!
+  rake
+  rspec

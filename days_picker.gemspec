@@ -17,4 +17,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.11"
   s.homepage    =
     'https://github.com/ankit8898/days_picker'
+  s.add_development_dependency "rspec"
+  s.add_development_dependency "activesupport"
+  s.add_development_dependency "rake"
 end
