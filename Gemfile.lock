@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    1.2.1 (1.1.1)
+    days_picker (1.2.2)
 
 GEM
   remote: https://rubygems.org/
@@ -34,7 +34,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  1.2.1!
   activesupport
+  days_picker!
   rake
   rspec
