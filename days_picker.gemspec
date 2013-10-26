@@ -1,5 +1,10 @@
+$:.push File.expand_path("../lib", __FILE__)
+
+# Maintain your gem's version:
+require "days_picker/version"
+
 Gem::Specification.new do |s|
-  s.name        = 'days_picker'
+  s.name        = DaysPicker::VERSION
   s.version     = '1.1.1'
   s.date        = '2012-07-22'
   s.summary     = "Days Picker helps you find the total Weekdays, Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year. (ie Weekdays.in_jan(2012), Sundays.in_jan(2012) ,Saturdays.by_year(2012) .. )"
