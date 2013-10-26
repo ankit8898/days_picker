@@ -1,3 +1,5 @@
+{<img src="https://travis-ci.org/ankit8898/days_picker.png?branch=master" alt="Build Status" />}[https://travis-ci.org/ankit8898/days_picker]
+
 == Days Picker
 
 
