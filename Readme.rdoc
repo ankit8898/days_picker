@@ -1,5 +1,7 @@
 {<img src="https://travis-ci.org/ankit8898/days_picker.png?branch=master" alt="Build Status" />}[https://travis-ci.org/ankit8898/days_picker]
 
+{<img src="https://coveralls.io/repos/ankit8898/days_picker/badge.png?branch=master" alt="Coverage Status" />}[https://coveralls.io/r/ankit8898/days_picker?branch=master]
+
 == Days Picker
 
 
