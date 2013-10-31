@@ -8,6 +8,8 @@
 
 Days Picker helps you find the total Weekdays, Sundays, Mondays, Tuesdays, Wednesdays, Thursdays, Fridays and Saturdays of a Month or in a Year.  Implementation on Pure Ruby {Date Class}[http://ruby-doc.org/stdlib-1.9.3/libdoc/date/rdoc/Date.html].
 
+Here is a Example Application on the usage www.dayspicker.com
+
 == Installation
 
 In Rails 3+, add this to your Gemfile and run the bundle command.
